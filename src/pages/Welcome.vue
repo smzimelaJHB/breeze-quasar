@@ -4,8 +4,8 @@ import { useUsers } from 'stores/user'
 const store = useUsers()
 
 const auth = store.authUser
-
 </script>
+
 
 <template>
       <div>
@@ -23,7 +23,7 @@ const auth = store.authUser
                 to="/login"
                 class="ml-4 text-sm text-gray-700 underline">
                 Log in
-            </router-link> <span></span>
+            </router-link>
             <router-link
                 to="/register"
                 class="ml-4 text-sm text-gray-700 underline">
@@ -32,5 +32,4 @@ const auth = store.authUser
           </div>
       </div>
 </template>
-
 

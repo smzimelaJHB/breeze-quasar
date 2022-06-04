@@ -1,19 +1,12 @@
+import home from "./home";
+import error from "./error";
+import login from "./login";
+import welcome from "./welcome";
+import register from "./register";
+import dashboard from "./dashboard";
 
-const routes = [
-  {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
-  },
+const routes = [home, register, dashboard, error, login, welcome];
 
-  // Always leave this as last one,
-  // but you can also remove it
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
-]
 
 export default routes
+
